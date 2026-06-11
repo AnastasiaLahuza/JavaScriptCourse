@@ -1,6 +1,13 @@
 function showweatherDetails(event) {
     event.preventDefault();
 
+// In JavaScript, the method preventDefault() is used inside an event handler to stop the browser's default action for that event from occurring.
+
+// For example, in the context of a form submission:
+
+// By default, when you submit a form, the browser reloads the page or navigates away.
+// Calling event.preventDefault() inside the form's submit event handler prevents this page reload.
+
 const city = document.getElementById('city').value;
 const apiKey = '6de827fc1a98ee764214206cc00bbf6c';
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
